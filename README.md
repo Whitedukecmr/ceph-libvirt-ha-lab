@@ -263,6 +263,14 @@ systemctl start mnt-cephfs.mount
 
 ---
 
+## 🖥 Dashboard Ceph
+
+![Ceph Dashboard](screenshots/09-ceph-dashboard.png)
+
+> Dashboard Ceph 19.2.3 Squid — 3 hosts, 3 monitors, 9 OSDs, 4 pools, 337 PGs, 2 MDS. Utilisation : 6.9 GiB / 900 GiB.
+
+---
+
 ## ✅ État final du cluster
 
 | Point de validation | Statut |
