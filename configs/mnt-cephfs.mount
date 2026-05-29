@@ -1,0 +1,13 @@
+﻿[Unit]
+Description=Mount CephFS on /mnt/cephfs
+After=network-online.target ceph.target
+Wants=network-online.target
+
+[Mount]
+What=node1,node2,node3:/
+Where=/mnt/cephfs
+Type=ceph
+Options=name=admin,secretfile=/etc/ceph/cephfs.secret,_netdev,noatime
+
+[Install]
+WantedBy=multi-user.target
